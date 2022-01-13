@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "ArchitectUI - Bootstrap 4 ReactJS Admin Dashboard Template FREE",
-  "author": "DashboardPack.com"
-  
-  },
+  "author": "DashboardPack.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
@@ -111,9 +109,9 @@
     "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "start": " node scripts/start.js",
-    "build": " node scripts/build.js",
-    "test": " node scripts/test.js --env=jsdom",
+    "start": "cross-env NODE_PATH=./src node scripts/start.js",
+    "build": "cross-env NODE_PATH=./src node scripts/build.js",
+    "test": "cross-env NODE_PATH=./src node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
